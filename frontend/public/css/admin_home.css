@@ -1,0 +1,123 @@
+/* Body */
+body{
+    margin:0px;
+    font-family: "Roboto";
+}
+
+.bodyContainer{
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+.flexContainer{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap
+}
+
+/* Top Display Bar */
+.topDisplay {
+    width: 100%;
+    height: 70px;
+    background-color: #1d262f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0px;
+    z-index: 3;
+}
+
+/* Side Navigation Bar */
+.sideNav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background-color: black;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+/* Side Navigation Bar Texts */
+.sideNav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+}
+
+.sideNav a:hover {
+    color: #f1f1f1;
+}
+
+/* Side Navigation Bar Close Button */
+.sideNav .closeBtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    padding-left: 50px;
+}
+
+/* Side Navigation Bar Home Button */
+#homeIcon {
+    position: absolute;
+    top: 0;
+    width: 25px;
+    padding-top: 20px;
+}
+
+/* Side Navigation Bar Hamburger Icon */
+#sideNavBtn {
+
+    margin-left: 35px;
+    font-size: 35px;
+    cursor: pointer;
+    color: white;
+    z-index: 1;
+}
+
+/* Container for Page Title */
+#adminTitleContainer {
+    flex-grow: 1.1;
+    display: flex;
+    justify-content: center;
+    margin-left: -90px;
+    font-family: "Roboto";
+}
+
+/* Page Title */
+#adminTitle {
+    color: white;
+    font-family: "Roboto";
+}
+
+.adesImg {
+    justify-content: center; 
+    display: flex;
+}
+
+/* Admin Charts */
+.charts {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    padding: 40px;
+    gap: 60px;
+}
+
+.charts a {
+    width: 650px;
+}
+
+.charts img {
+    width: 100%;
+}

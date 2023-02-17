@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="../css/inventory.css">
+    <title>Inventory</title>
+
+</head>
+
+<body>
+    <header>
+        <h1>
+            Inventory System
+        </h1>
+    </header>
+
+    <!-- GET INVENTORY BY USERID -->
+
+    <div id="getInventoryById">
+        <h2>GET Inventory by USERID</h2>
+        <input id="GETuserIdInput" type="text" placeholder="Key in User Id">
+        <button id="getInventoryByIdButton" type="button">Get Inventory By UserId</button>
+        <section id="displayInventoryById">
+
+        </section>
+    </div>
+    <br>
+    <!-- POST INVENTORY BY USERID OR QUANTITY -->
+
+    <div id="postInventoryById">
+        <h2>BUYING ITEM BY USERID</h2>
+        <form id="postInventoryForm">
+            <div class = "formRow">
+                <label for = "userIdInput">User ID: </label>
+                <input name = "userIdInput" id = "POSTuserIdInput" type="text" placeholder="Eg: 27" required/>
+            </div>
+            <div class = "formRow">
+                <label for = "itemIdInput">Item ID: </label>
+                <input name = "itemIdInput" id = "POSTitemIdInput" type="text" placeholder="Eg: 7" required/>
+            </div>
+            <div class = "formRow">
+                <label for = "quantityInput">Quantity: </label>
+                <input name = "quantityInput" id = "POSTquantityInput" type="text" placeholder="Eg: 1" required/>
+            </div>
+            <button id="postInventoryByIdButton" type="button">Buy Item By Quantity and Userid</button>
+            <section id="displayPost">
+
+            </section>
+        </form>
+    </div>
+    <br>
+    <!-- UPDATE/DELETE INVENTORY BY USERID OR QUANTITY-->
+
+    <div id="updateInventoryById">
+        <h2>DELETING ITEM BY USERID</h2>
+        <form id="updateInventoryForm">
+            <div class = "formRow">
+                <label for = "userIdInput">User ID: </label>
+                <input name = "userIdInput" id = "UPDATEuserIdInput" type="text" placeholder="Eg: 27" required/>
+            </div>
+            <div class = "formRow">
+                <label for = "itemIdInput">Item ID: </label>
+                <input name = "itemIdInput" id = "UPDATEitemIdInput" type="text" placeholder="Eg: 7" required/>
+            </div>
+            <div class = "formRow">
+                <label for = "quantityInput">Quantity: </label>
+                <input name = "quantityInput" id = "UPDATEquantityInput" type="text" placeholder="Eg: 1" required/>
+            </div>
+            <button id="updateInventoryByIdButton" type="button">Update/Delete Item By Quantity and Userid</button>
+            <section id="displayUpdate">
+
+            </section>
+             
+        </form>
+    </div>
+
+
+    <script src="../js/script.js" type="text/javascript"></script>
+    <script src="../js/inventory copy.js" type="text/javascript"></script>
+</body>
+
+</html>

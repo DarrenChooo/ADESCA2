@@ -1,0 +1,137 @@
+/* Body */
+.bodyContainer{
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+.flexContainer{
+    width: 60vw;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap
+}
+
+/* Image Styling */
+#imagesContent{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+    gap: 45px;
+}
+
+/* Styling of card */
+.card{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    /* width: 60%; */
+    border-radius: 15px;
+    color: black;
+    text-decoration: none;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.mainText {
+    display: flex;
+    align-items: center;
+}
+
+.subText {
+    display: flex;
+    align-items: center;
+    color: grey;
+    font-size: 16px;
+}
+
+.image{
+    border-radius: 15px;
+    width: 140px;
+    height: 140px;
+    image-rendering: pixelated;
+}
+
+
+/* Search Bar Container  */
+.searchCtn {
+    padding: 0px 30px 50px;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.searchCtnImg {
+    height: 40px;
+}
+
+/* Search Bar */
+.searchBar{
+    width: 60%;
+    height: 60px;
+    display: flex;
+    margin: auto;
+    
+}
+
+/* Search Input from Search Bar */
+#searchInput {
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    padding: 15px 45px 15px 15px;
+    transition: all .4s;
+    background-color: #eaeaeb;
+    color: #6c6c6c;
+    border-radius: 6px 0px 0px 6px;
+    border:none;
+}
+
+/* Search Icon from Search Bar */
+#searchIcon {
+    width: 20%;
+    font-size: 19px;
+    background-color: #eaeaeb;
+    color: #6c6c6c;
+    border-radius: 0px 6px 6px 0px;
+    border:none;
+}
+
+/* Search Bar Animation*/
+#searchInput:focus, #searchIcon:active{
+    border:none;
+    outline:none;
+    box-shadow: 0 1px 12px #b8c6db;
+    -moz-box-shadow: 0 1px 12px #b8c6db;
+    -webkit-box-shadow: 0 1px 12px #b8c6db;
+}
+
+/* Text Content Section */
+.textContainer {
+    padding: 0 35px;
+    width: 100%;
+}
+
+/* Pagination Styling*/
+.pagination {
+    display: inline-block;
+    padding-top: 50px;
+    padding-bottom: 60px;
+  }
+  
+  .pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+  }

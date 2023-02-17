@@ -1,0 +1,31 @@
+role,username,password,imageid,equippeditem,floorid,plotid,userstatus,lastloggedIn
+Player,john,pass,27,5,3,1,offline,2023-02-06 02:56:50.089977+00
+Admin,tim,pass,27,7,2,1,offline,2023-02-06 02:56:50.089977+00
+Player,tom,pass,27,9,4,1,offline,2023-02-06 02:56:50.089977+00
+Admin,sarah,pass,27,4,1,1,offline,2023-02-06 02:56:50.089977+00
+Player,brian,pass,27,6,5,1,offline,2023-02-06 02:56:50.089977+00
+Admin,bryan,pass,27,2,2,1,offline,2023-02-06 02:56:50.089977+00
+Player,tam,pass,27,10,1,1,offline,2023-02-06 02:56:50.089977+00
+Admin,jerry,pass,27,3,3,1,offline,2023-02-06 02:56:50.089977+00
+Player,david,pass,27,1,5,1,offline,2023-02-06 02:56:50.089977+00
+Player, emily, pass, 27, 8, 6,1,offline,2023-02-06 02:56:50.089977+00
+Admin, Jessica, pass, 27, 11, 4,1,offline,2023-02-06 02:56:50.089977+00
+Player, Michael, pass, 27, 5, 2,1,offline,2023-02-06 02:56:50.089977+00
+Admin, Thomas, pass, 27, 7, 1,1,offline,2023-02-06 02:56:50.089977+00
+Player, Rachel, pass, 27, 9, 5,1,offline,2023-02-06 02:56:50.089977+00
+Admin, Brian, pass, 27, 4, 3,1,offline,2023-02-06 02:56:50.089977+00
+Player, Amanda, pass, 27, 6, 2,1,offline,2023-02-06 02:56:50.089977+00
+Admin, James, pass, 27, 2, 4,1,offline,2023-02-06 02:56:50.089977+00
+Player, Laura, pass, 27, 10, 6,1,offline,2023-02-06 02:56:50.089977+00
+Admin, William, pass, 27, 3, 1,1,offline,2023-02-06 02:56:50.089977+00
+Player, Catherine, pass, 27, 1, 5,1,offline,2023-02-06 02:56:50.089977+00
+Admin, Robert, pass, 27, 8, 3,1,offline,2023-02-06 02:56:50.089977+00
+Player, Elizabeth, pass, 27, 5, 4,1,offline,2023-02-06 02:56:50.089977+00
+Admin, Joseph, pass, 27, 7, 6,1,offline,2023-02-06 02:56:50.089977+00
+Player, Maria, pass, 27, 9, 2,1,offline,2023-02-06 02:56:50.089977+00
+Admin, Richard, pass, 27, 4, 5,1,offline,2023-02-06 02:56:50.089977+00
+Player, iniyan, pass, 27, 9, 2,1,offline,2023-02-06 02:56:50.089977+00
+Player, smelly, pass, 27, 9, 2,1,offline,2023-02-06 02:56:50.089977+00
+Player, test, pass, 27, 3, 2,1,offline,2023-02-06 02:56:50.089977+00
+Player, hello, pass, 27, 9, 2,1,offline,2023-02-06 02:56:50.089977+00
+Player, gay, pass, 27, 9, 1,1,offline,2023-02-06 02:56:50.089977+00

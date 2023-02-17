@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Axios Library-->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <!-- Icons Library-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Currency CSS-->
+    <link rel="stylesheet" href="../css/manage_currency.css">
+    <!-- Default CSS-->
+    <link rel="stylesheet" href="../css/admin_home.css">
+    <title>Currency</title>
+
+</head>
+
+<body>
+
+
+    <header>
+        <div id="Main">
+            <div class="topDisplay">
+                <!--Side Navigation Bar-->
+                <div id="sideNav" class="sideNav">
+                    <a href="/admin/home.html">
+                        <i id="homeIcon" class="fa-solid fa-house"></i>
+                    </a>
+                    <a href="javascript:void(0)" class="closeBtn" onclick="closeNav()">&times;</a>
+                    <a href="/admin/manage_currency.html">Currency</a>
+                    <a href="/admin/manage_dialogues.html?pagination=1">Dialogue</a>
+                    <a href="/admin/manage_floor.html">Floors</a>             
+                    <a href="/admin/game_analysis_dashboard.html">Game</a>
+                    <a href="/admin/manage_images.html?pagination=1">Image</a>
+                    <a href="/admin/manage_items.html">Items</a>
+                    <a href="/admin/manage_npcs.html">NPC</a>
+                    <a href="/admin/manage_user.html">Users</a>
+                    <a href="/admin/manage_post.html">Post</a>
+                    <a href="/admin/manage_boss.html">Boss</a>
+                    <a href="./../index.html" id="logoutButton" style="color: red;">Log out</a>
+                </div>
+
+                <!--Side Navigation Bar Icon-->
+                <span id="sideNavBtn" onclick="openNav()">☰</span>
+
+                <!--Game Title-->
+                <div id="adminTitleContainer">
+                    <h1 id="adminTitle">Currency Manager</h1>
+                </div>
+            </div>
+    </header>
+
+    <div id="Content" class="container">
+        <div class="flexCtn">
+            <!--Search Bar-->
+            <div class="searchCtn">
+                <!--Search Bar-->
+                <div class="searchBar">
+                    <input id="searchInput" type="text" placeholder="Search Username">
+                    <button id="searchIcon" type="submit">
+                        <!-- Search Icon -->
+                        <i class="fa fa-search"></i>
+                    </button>
+                </div>
+            </div>
+
+
+
+            <!-- DISPLAY GET ALL CURRENCY -->
+            <section id="displayCurrency" class="wrap">
+
+            </section>
+        </div>
+    </div>
+
+
+
+
+
+
+    <script src="../js/admin_home.js"></script>
+    <script src="../js/script.js" type="text/javascript"></script>
+    <script src="../js/admin_manage_currency.js" type="text/javascript"></script>
+</body>
+
+</html>

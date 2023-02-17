@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Import Axios library-->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <!--Import CSS File-->
+    <link href="/css/admin_home.css" rel="stylesheet">
+
+    <!--Import Font Awesome Library-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--Import Google Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>Admin Home Page</title>
+</head>
+
+<body>
+    <!--Top bar arranged with flex-->
+    <div class="topDisplay">
+        <!--Side Navigation Bar-->
+        <div id="sideNav" class="sideNav">
+            <a href="/admin/home.html">
+                <i id="homeIcon" class="fa-solid fa-house"></i>
+            </a>
+            <a href="javascript:void(0)" className="closeBtn" onclick="closeNav()">&times;</a>
+            <a href="/admin/react_manage_currency.html">Currency</a>
+            <a href="/admin/inventory_graph.html">Inventory Graph</a>
+            <a href="/admin/manage_spin.html">Spin The Wheel</a>
+            <a href="/admin/react_manage_dialogues.html?pagination=1">Dialogue</a>
+            <a href="/admin/react_manage_floors.html">Floors</a>
+            <a href="/admin/track_game_duration_chart.html">Game</a>
+            <a href="/admin/react_manage_images.html">Image</a>
+            <a href="/admin/react_manage_items.html">Items</a>
+            <a href="/admin/react_manage_npcs.html">NPC</a>
+            <a href="/admin/manage_user.html">Users</a>
+            <a href="/admin/manage_post.html">Post</a>
+            <a href="/admin/react_manage_boss.html">Boss</a>
+            <a href="./../index.html" id="logoutButton" style="color: red;">Log out</a>
+        </div>
+
+        <!--Side Navigation Bar Icon-->
+        <span id="sideNavBtn" onclick="openNav()">☰</span>
+
+        <!--Game Title-->
+        <div id="adminTitleContainer">
+            <h1 id="adminTitle">Admin Home Page</h1>
+        </div>
+    </div>
+    <div class="charts">
+        <a href="./game_analysis_dashboard.html">
+            <img src="../images/chart2.jpg" alt="Game Analysis Chart">
+        </a>
+        <a href="./track_player_status_chart.html">
+            <img src="../images/chart3.jpg" alt="Player Status Chart">
+        </a>
+        <a href="./track_equipped_items.html">
+            <img src="../images/chart4.jpg" alt="Items Chart">
+        </a>
+        <a href="./inventory_graph.html">
+            <img src="../images/chart5.jpg" alt="Inventory Chart">
+        </a>
+    </div>
+
+    <!--Web App JS-->
+    <script src="/js/admin_home.js"></script>
+</body>
+
+</html>

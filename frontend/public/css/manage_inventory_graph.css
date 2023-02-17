@@ -1,0 +1,127 @@
+/* Body Height */
+body {
+    max-height: 100%;
+    background-color: whitesmoke;
+    justify-content: center;
+}
+
+/*To make it responsive*/
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.flexCtn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+/*Grid format for GET ALL currency*/
+#displayCurrency {
+    display: grid;
+    grid-gap: 2em;
+    padding: 10px;    
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 1fr 1fr ;
+    
+}
+
+.wrap {
+    max-width: 900px;
+    margin: 0 auto;
+    padding-left: 1em;
+    padding-right: 1em;
+ }
+
+.Button2 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 40%;
+}
+
+/*back button*/
+.backBtn {
+    background-color: #1d262f;
+    border: none;
+    color: white; 
+    font-size: 25px;
+    cursor: pointer;
+    margin-left: 35px;
+    z-index: 1;
+}
+
+
+/* Search Bar Container  */
+.searchCtn {
+    padding-top: 30px;
+    padding-bottom: 30px;
+     display: flex;
+       
+}
+
+/* Search Bar Container Images */
+.searchCtnImg {
+    height: 40px;
+    display: none;
+}
+
+/* Search Bar */
+.searchBar{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    margin: auto;
+    
+}
+
+/* Search Input from Search Bar */
+#searchInput {
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    padding: 15px 45px 15px 15px;
+    transition: all .4s;
+    background-color: #eaeaeb;
+    color: #6c6c6c;
+    border-radius: 6px 0px 0px 6px;
+    border:none;
+}
+
+/* Search Icon from Search Bar */
+#searchIcon {
+    width: 20%;
+    font-size: 19px;
+    background-color: #eaeaeb;
+    color: #6c6c6c;
+    border-radius: 0px 6px 6px 0px;
+    border:none;
+    cursor: pointer;
+}
+
+/* Search Bar Animation*/
+#searchInput:focus, #searchIcon:active{
+    border:none;
+    outline:none;
+    box-shadow: 0 1px 12px #b8c6db;
+    -moz-box-shadow: 0 1px 12px #b8c6db;
+    -webkit-box-shadow: 0 1px 12px #b8c6db;
+}
+
+.inputInstructions{
+    font-size: 10px;
+    margin-right: 10px;
+   
+}
+.chartContainer {
+    display: flex;
+    padding: 10px;
+}
+
+
+
+
+

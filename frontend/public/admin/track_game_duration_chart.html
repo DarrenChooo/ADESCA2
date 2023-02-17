@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Play Duration Chart</title>
+
+    <!--Import Axios library-->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <!--Import CSS File-->
+    <link href="/css/admin_home.css" rel="stylesheet">
+    <link href="/css/track_game_duration_chart.css" rel="stylesheet">
+    
+    <!--Import Google Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--Import React File-->
+    <!-- <script src="../react/ManageNpcs.js" type="module"></script> -->
+    <!-- Load d3.js -->
+    <script src="https://d3js.org/d3.v3.min.js"></script>
+    <!-- <script src="../js/track_game_duration_chart.js" type="text/javascript"></script> -->
+</head>
+
+<body>
+
+    <!--Top bar arranged with flex-->
+    <div class="topDisplay">
+        <!--Go to back Icon-->
+        <a class="backBtn" href="/admin/game_analysis_dashboard.html">
+            <i id="backIcon" class="fa-solid fa-chevron-left"></i>
+        </a>
+
+        <!--Page Title-->
+        <div id="adminTitleContainer">
+            <h1 id="adminTitle">Game Play Duration Analytical Chart</h1>
+        </div>
+    </div>
+
+    <!-- Create a div where the graph will take place -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="panel panel-default">
+                    
+                    <div class="panel-body">
+                        <h4><strong>Check on the Checkboxes to See Data:</strong></h4>
+                        <form role="form" class="categories">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="graph"></div>
+            </div>
+        </div>
+    </div>
+
+    <!--Web App JS-->
+    <script src="../js/script.js" type="text/javascript"></script>
+    <script src="../js/track_game_duration_chart.js" type="text/javascript"></script>
+
+    <!-- Load d3.js -->
+    <!-- <script src="https://d3js.org/d3.v4.js"></script> -->
+
+</body>
+
+</html>

@@ -1,0 +1,84 @@
+.formRow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 0 1rem 0;
+}
+
+html, body {
+    height: 100%;
+    margin: 0px;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: black;
+    font-size: 18px;
+}
+
+header {
+    background: #1D415C;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    color:#fff;
+    padding: 0.8em 0;
+    margin-bottom: 2em;
+}
+
+.backBtn {
+    font-size: 20px;
+    color: white; 
+    cursor: pointer;
+    padding-left: 50px;
+}
+
+.card {
+    background: #fff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    position:relative;
+    display:grid;
+    justify-items: center;
+    align-items: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.card img {
+    display: block;
+    position:inherit;
+    image-rendering: pixelated;
+    z-index:1;
+    width: 80%;
+    margin:0 auto;
+    transition: transform 0.2s ease-in-out;
+}
+
+.card:hover img {
+    transform:translateY(-10%);
+}
+
+.item-title {
+    position: relative;
+}
+
+.layout {   
+    display: grid;
+    grid-gap: 1em;
+    background-color: #1D415C;
+    padding: 20px;    
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    border-radius: 15px;
+    max-width: 80%;;
+    margin: 0 auto;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+a {
+    text-decoration: none;
+    color: #1D415C;
+}
+
+ 
+

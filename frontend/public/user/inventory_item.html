@@ -1,0 +1,60 @@
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Axios Library-->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <!-- Icons Library-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- inventory item CSS-->
+    <link rel="stylesheet" href="../css/inventory_item.css">
+    
+    <title>My Inventory</title>
+
+</head>
+
+<body>
+    <header>
+         <!-- display player name -->
+         <div class="wrap">My Inventory</div>
+         <!-- Back button -->
+        <div class="wrap2">
+            <a class="backBtn" href="/user/inventory.html">
+                <i id="backIcon" class="fa-solid fa-chevron-left"></i>
+                <span>Back</span>
+            </a>
+        </div>
+    </header>
+
+     <!-- display item info -->
+    <div class="layout wrap">
+        <div class="card" id ="displayItemInfo">
+        </div>
+        <form id="updateInventoryForm">
+            <div class = "formRow">
+                <label for = "quantityInput">Quantity: </label>
+                <input name = "quantityInput" id = "UPDATEquantityInput" type="text" placeholder="Eg: 1" required/>
+            </div>
+            <!--Delete Button-->
+            <div class="Button">
+                <button type="button" id="updateIdButton">Delete</button>
+            </div>
+            <!-- display deleted item -->
+            <section id="displayDeleted">
+
+            </section>
+             
+        </form>
+       
+    </div>
+    
+
+    <!-- backend linking script -->
+    <script src="../js/script.js" type="text/javascript"></script>
+    <!-- inventory item script -->
+    <script src="../js/inventory_item.js" type="text/javascript"></script>
+</body>
+
+</html>

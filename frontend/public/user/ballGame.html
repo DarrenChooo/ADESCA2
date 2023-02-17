@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="../css/ballGame.css">
+
+    <!--Import Font and Icon toolkit from FontAwesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--Import Google Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <!--Import Axios library-->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <title>ballGame</title>
+</head>
+<body>
+    
+    <div id='main'>
+        <div id=score>SCORE: <span>0</span></div>
+        <div id=canvas></div>
+        <div id=controls>Arrows to <b>move</b>.<b>Avoid</b> the evil <b>blue dots!</b><br>Get <b>5</b> coins to <b>win!</b>
+            <b>Eat</b> the white circle to <b>grow</b>.</div>
+        <div id='about'></div>
+    </div>
+    <!-- build:js -->
+    <script src="../js/script.js" type="text/javascript"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/pixi.js/4.4.5/pixi.min.js'></script>
+    
+    <script src='../js/ballGame.js'></script>
+</body>
+</html>

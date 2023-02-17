@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--Import CSS File-->
+        <link href="/css/admin_home.css" rel="stylesheet">
+        <link href="/css/manage_item.css" rel="stylesheet">
+
+        <!--Import Font and Icon Toolkit from FontAwesome-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <!--Import Google Fonts-->
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+        <!--Import Axios library-->
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <title>Upload Item</title>
+
+</head>
+    <body>
+        
+    <div class="topDisplay"> 
+        <!--Go to back Icon-->
+        <a class="backBtn" href="/admin/manage_items.html">
+            <i id="backIcon" class="fa-solid fa-chevron-left"></i>
+        </a>
+
+        <!--Game Title-->
+        <div id="adminTitleContainer">
+            <h1 id="adminTitle">Upload Item</h1>
+        </div>
+    </div>
+    <div class="bodyContainer">
+            <div class="card">
+                <div class = "textContainer">
+                    <form class="postForm">
+
+                        <div class="input">
+                            <label for="itemname" class="inputLabel" >Item Name:</label>
+                                <input type="text" id="postItemName" name="itemname" required>
+                        </div>
+                        <div class="input">
+                            <label for="cost" class="inputLabel">Item Cost:</label>
+                                <input type="text" id="postCost" name="cost" required>
+                        </div>
+                        <div class="input">
+                            <label for="levelreq" class="inputLabel">Level Requirement:</label>
+                                <input type="text" id="postLevelReq" name="levelreq" required>
+                        </div>
+                        <div class="input">
+                            <label for="imageid" class="inputLabel">Item ImageID:</label>
+                                <input type="text" id="postImageId" name="imageid" required>
+                        </div>
+                        <br/>
+                            <div class="button-container">
+                                <button class="button" type="button" id="postButton">Upload</button>
+                            </div>
+
+                        </form>
+                </div>
+            </div>
+    </div>
+
+        <script src="/js/script.js"></script>
+        <script src="/js/admin_add_item.js"></script>
+    </body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--Import CSS File-->
+        <link href="/css/admin_home.css" rel="stylesheet">
+        <link href="/css/manage_image.css" rel="stylesheet">
+
+        <!--Import Font and Icon Toolkit from FontAwesome-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <!--Import Google Fonts-->
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+        <!--Import Axios library-->
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <title>Upload Image</title>
+
+</head>
+    <body>
+        
+    <div class="topDisplay"> 
+        <!--Go to back Icon-->
+        <a class="backBtn" href="/admin/manage_images.html?pagination=1">
+            <i id="backIcon" class="fa-solid fa-chevron-left"></i>
+        </a>
+
+        <!--Game Title-->
+        <div id="adminTitleContainer">
+            <h1 id="adminTitle">Upload Image</h1>
+        </div>
+    </div>
+    <div class="bodyContainer">
+            <div class="card">
+                <div class = "textContainer">
+                    <form enctype="multipart/form-data" class="postForm">
+                    <div class="input">
+                        <label for="image" class="inputLabel">Image File:</label>
+                            <input type="file" id="postImage" name="imagefile" required>
+                    </div>
+                    <div class="input">   
+                        <label for="imagename" class="inputLabel">Image Name:</label>
+                            <input type="text" id="postImageName" name="imagename" required>
+                    </div>
+                    <div class="input">
+                        <label for="imagesorter" class="inputLabel">Image Type:</label>
+                            <select id="postImageSorter" name="imagesorter">
+                                <option value="Item">Item</option>
+                                <option value="Floor">Floor</option>
+                                <option value="NPC">NPC</option>
+                                <option value="Boss">Boss</option>
+                                <option value="Player">Player</option>
+                                <option value="Others">Others</option>
+                            </select>
+                    </div>
+                       <br/>
+                       <br/>
+                        <div class="button-container">
+                            <button class="button" type="button" id="postButton">Upload</button>
+                        </div>
+                </div>
+            </div>
+    </div>
+
+        <script src="/js/script.js"></script>
+        <script src="/js/admin_add_image.js"></script>
+    </body>
+</html>

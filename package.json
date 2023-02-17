@@ -1,0 +1,37 @@
+{
+  "name": "ades-ay2223s2-class-5-team-1",
+  "version": "1.0.0",
+  "description": "A School Project Assignment that our team has design and build for a full stack web application revolving around a simple 2D game.",
+  "main": "index.js",
+  "scripts": {
+    "start": "cd backend && npm start",
+    "postinstall": "cd backend && npm install",
+    "dev": "cd backend && npm run dev",
+    "lint": "eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ST0507-ades/ades-ay2223s2-class-5-team-1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ST0507-ades/ades-ay2223s2-class-5-team-1/issues"
+  },
+  "homepage": "https://github.com/ST0507-ades/ades-ay2223s2-class-5-team-1#readme",
+  "dependencies": {
+    "d3": "^7.8.2",
+    "fast-csv": "^4.3.6",
+    "multer": "^1.4.5-lts.1",
+    "react": "^18.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.31.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsx-a11y": "^6.6.1",
+    "eslint-plugin-react": "^7.31.11",
+    "eslint-plugin-react-hooks": "^4.6.0"
+  }
+}

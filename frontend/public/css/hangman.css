@@ -1,0 +1,236 @@
+body {
+    font-family: "Roboto";
+    background-color: #1d262f;
+}
+
+canvas {
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+
+.game {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+h1 {
+    padding: 20px 300px;
+    color: white;
+}
+
+#answerCtn {
+    display: flex;
+    justify-content: center;
+    width: 65%;
+}
+
+#keyboard {
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    flex-wrap: wrap;
+}
+
+.answerBox {
+    width: 65px;
+    height: 65px;
+    background-color: #4298f5;;
+    border-radius: 10px;
+    margin: 0px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: white;
+    font-weight: bold;
+}
+
+.divider {
+    width: 1000px;
+    margin: 20px 0px;
+}
+
+.letters {
+    transition: box-shadow .3s;
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    border-radius:10px;
+    border: 1px solid gray;
+    margin: 0px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.letters:enabled:hover {
+    box-shadow: 0 0 15px #4298f5;; 
+}
+
+.letters:disabled {
+    background-color: gray;
+    cursor: not-allowed;
+}
+
+#tries {
+    display: flex;
+    padding: 0px 300px
+}
+
+#tries h1 {
+    padding: 5px
+}
+
+/* Loading Spinner */
+.spinnerContainer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.loadingSpinner {
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    border: 13px solid #f3f3f3; /* Light grey */
+    border-top: 13px solid #383636; /* Black */
+    border-radius: 50%;
+    animation: spinner 1.5s linear infinite;
+}
+
+@keyframes spinner {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.loadingWords {
+    padding: 50px;
+    margin-top: 80px;
+}
+
+/* Game Container */
+.gameCtn h2{
+    display: flex;
+    justify-content: center;
+    color: white;
+    padding: 10px;
+}
+
+
+/* Button Container */
+.buttonCtn {
+    display: flex;
+    height: 130px;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Ready Button */
+.startButton {
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    font-size: 27px;
+    font-weight: bold;
+    color: black;
+}
+
+.startButton:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.startButton:active:after {
+    background: transparent;
+}
+
+.startButton:hover:before {
+    opacity: 1;
+}
+
+.startButton:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    color: transparent;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+/* Lose Screen Cpntainer */
+
+/* Lose Screen Words */
+.loseCtn h1, h2{
+    padding: 5px;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+/* Lose Screen Button */
+.loseBtnCtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+    height: 100px;
+    padding: 80px;
+    gap: 80px;
+}
+
+.loseButton {
+    background-color: #EA4C89;
+    border-radius: 10px;
+    border-style: none;
+    color: #FFFFFF;
+    font-size: 19px;
+    font-weight: bold;
+    cursor: pointer;
+    display: inline-block;
+    padding: 20px 26px;
+    text-align: center;
+    text-decoration: none;
+    transition: color 100ms;
+}
+
+.loseButton:hover,
+.loseButton:focus {
+    background-color: #F082AC;
+}

@@ -1,0 +1,29 @@
+html {
+    background-color: whitesmoke;
+}
+
+.graphContainer {
+    display: flex;
+    padding: 10px;
+}
+
+#barGraph {
+    background-color: white;
+    padding: 30px;
+    margin: 20px;
+    border-radius: 5px;
+    display: flex;
+    margin-left: 55px;
+}
+
+#donutGraph, #donutGraph2 {
+    background-color: white;
+    margin: 20px;
+    border-radius: 5px;
+    display: flex;
+}
+
+.donutGraphContainer {
+    height: 50px
+}
+

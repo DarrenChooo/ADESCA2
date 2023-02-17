@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Import CSS File-->
+    <link href="/css/admin_home.css" rel="stylesheet">
+    <link href="/css/admin_manage_floor.css" rel="stylesheet">
+    <link href="/css/admin_update_add_floor.css" rel="stylesheet">
+
+    <!--Import Font and Icon toolkit from FontAwesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--Import Google Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <!--Import Axios library-->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script> 
+    <title>Add Floor</title>
+</head>
+
+<body>
+    <!--Top bar arranged with flex-->
+    <div class="topDisplay">    
+        <!--Go to back Icon-->
+        <a class="backBtn" href="/admin/manage_floor.html">
+            <i id="backIcon" class="fa-solid fa-chevron-left"></i>
+        </a>
+
+        <!--Game Title-->
+        <div id="adminTitleContainer">
+            <h1 id="adminTitle">Add Floor</h1>
+        </div>
+    </div>
+    
+    <!--Update Floor Body Container-->
+    <div class="centreCtn">            
+        <!--Content body-->
+        <div id="contentBody">
+            <div class = "card">
+                <div class="dataCtn">
+                    <form>
+                        <div class="input">
+                            <input type="text" id="imageIdIpt" placeholder="Enter imageID"/>
+                            <label class="inputLabel">Image ID</label>
+                        </div>
+                        <div class="input">
+                            <input type="text" id="floorNameIpt" placeholder="Enter floor name"/>
+                            <label class="inputLabel">Floor Name</label>
+                        </div>
+                        <div class="btnCtn">
+                            <button id="submitBtn">Submit</button>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Web App JS-->
+    <script src="/js/script.js"></script>
+    <script src="/js/admin_add_floor.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+{
+  "name": "adesca",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node ./app.js",
+    "dev": "nodemon /app.js",
+    "seeddb": "node ./seedData/image_seeddata.js && node ./seedData/floors_seeddata.js",
+    "seedImages": "node ./seedData/image_seeddata.js",
+    "seedFloors": "node ./seedData/floors_seeddata.js",
+    "seedItems": "node ./seedData/items_seeddata.js",
+    "seedUsers": "node ./seedData/user_seeddata.js",
+    "seedNPC": "node ./seedData/npc_seeddata.js",
+    "seedInventory": "node ./seedData/inventory_seeddata.js",
+    "seedGame": "node ./seedData/game_seeddata.js",
+    "seedDialogue": "node ./seedData/dialogue_seeddata.js",
+    "seedCurrency": "node ./seedData/currency_seeddata.js",
+    "seedPost": "node ./seedData/post_seeddata.js",
+    "seedBoss": "node ./seedData/boss_seeddata.js",
+    "seedGameDuration": "node ./seedData/game_play_duration_seeddata.js",
+    "seedSpin": "node ./seedData/spin_seeddata.js",
+    "setupdb": "node ./dbsetup.js",
+    "cleardb": "node ./dbreset.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ST0507-ades/ades-ay2223s2-class-5-team-1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ST0507-ades/ades-ay2223s2-class-5-team-1/issues"
+  },
+  "homepage": "https://github.com/ST0507-ades/ades-ay2223s2-class-5-team-1#readme",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "fast-csv": "^4.3.6",
+    "jsonwebtoken": "^8.5.1",
+    "multer": "^1.4.5-lts.1",
+    "mysql2": "^2.3.3",
+    "nodemon": "^2.0.20",
+    "pg": "^8.8.0",
+    "pg-format": "^1.0.4"
+  }
+}

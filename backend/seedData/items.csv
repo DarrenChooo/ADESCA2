@@ -1,0 +1,12 @@
+itemname, cost, levelreq, imageid, damage, speed, durability, critrate
+Broken Sword,20,1,7,30,20,10,10
+Fire Sword,500,2,8,40,30,60,15
+Dark Sword,1000,3,9,60,50,100,30
+Sword Of Eyes,250,1,10,40,30,50,20
+Fat Sword,50,1,11,20,10,60,10
+Gold Sword,3000,3,12,60,80,100,30
+Green Sword,100,1,13,40,60,60,25
+Lava Sword,600,2,14,40,60,80,15
+Rainbow Sword,2000,4,15,70,50,60,25
+Rune Sword,5000,5,16,80,80,100,30
+Water Sword,5000,5,17,90,100,80,60

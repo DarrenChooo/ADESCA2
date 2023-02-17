@@ -1,0 +1,230 @@
+/* Body */
+html, body {
+    margin: 0;
+    min-height: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-size: 100% 100vh;
+}
+
+/* Game Top Bar */
+.topBar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+/* Profile Container */
+#profile {
+    background-color: #1d262f;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    margin: 15px auto 0px 15px
+}
+
+/* Profile Image Container */
+.profileImage {
+    max-width: 50%;
+}
+
+/* Profile Image */
+#profile img {
+    width: 60%;
+    height: 60%;
+}
+
+/* Profile Details Container */
+.profileDetails h3 {
+    color: #F59F42;
+}
+
+/* Buttons Container */
+.btnContainer {
+    display: flex;
+}
+
+/* Game Buttons */
+.gameBtns {
+    padding: 20px;
+    margin: 17px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    background-color: #1d262f;
+    max-height: 65.6px;
+}
+
+.gameBtns:hover, .gameBtns:active i {
+    color: #F59F42;
+}
+
+.gameBtns:hover i {
+    color: #F59F42;
+}
+
+/* Game Button Icons */
+.gameBtns i {
+    color: #4298f5;
+    font-size: 25px;
+}
+
+.gameBtns a {
+    text-decoration: none;
+}
+
+#player {
+    width: 100%;
+    height: 100%;
+}
+
+/* Overlay */
+.overlay {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 880px;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+}
+
+/* Overlay Player Container */
+.playerCtn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+    height: 400px;
+    margin: 150px;
+    z-index: 3;
+}
+
+/* Overlay Player Header */
+.playerCtn h1 {
+    font-weight: bold;
+    font-size: 35px;
+    color: white;
+}
+
+/* Overlay Player Image */
+.playerCtn img {
+    padding: 50px;
+    width: 50%;
+    height: 75%;
+}
+
+.timeBox {
+    display: flex;
+    margin-top: 20px;
+    padding: 12px;
+    width: 20%;
+    border-radius: 5px;
+    background-color: #1d262f;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+
+}
+
+/* Ready Button */
+.readyButton {
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    font-size: 27px;
+    font-weight: bold;
+    color: black;
+}
+
+.readyButton:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.readyButton:active:after {
+    background: transparent;
+}
+
+.readyButton:hover:before {
+    opacity: 1;
+}
+
+.readyButton:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    color: transparent;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 400% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+
+/* Loading Spinner */
+.spinnerContainer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.loadingSpinner {
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    border: 13px solid #f3f3f3;
+    /* Light grey */
+    border-top: 13px solid #383636;
+    /* Black */
+    border-radius: 50%;
+    animation: spinner 1.5s linear infinite;
+}
+
+@keyframes spinner {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}

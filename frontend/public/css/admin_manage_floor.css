@@ -1,0 +1,138 @@
+/* Body */
+.centreCtn {
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Search Bar Container  */
+.searchCtn {
+    padding: 30px 30px 5px;
+    height: 100px;
+    width: 55%;
+    display: flex;
+    align-items: center;
+}
+
+/* Search Bar Container Images */
+#add, #delete {
+    height: 40px;
+}
+
+/* Search Bar */
+.searchBar{
+    width: 60%;
+    height: 60px;
+    display: flex;
+    margin: auto;
+    
+}
+
+/* Search Input from Search Bar */
+#searchInput {
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    padding: 15px 45px 15px 15px;
+    transition: all .4s;
+    background-color: #eaeaeb;
+    color: #6c6c6c;
+    border-radius: 6px 0px 0px 6px;
+    border:none;
+}
+
+/* Search Icon from Search Bar */
+#searchIcon {
+    width: 20%;
+    font-size: 19px;
+    background-color: #eaeaeb;
+    color: #6c6c6c;
+    border-radius: 0px 6px 6px 0px;
+    border:none;
+}
+
+/* Search Bar Animation*/
+#searchInput:focus, #searchIcon:active{
+    border:none;
+    outline:none;
+    box-shadow: 0 1px 12px #b8c6db;
+    -moz-box-shadow: 0 1px 12px #b8c6db;
+    -webkit-box-shadow: 0 1px 12px #b8c6db;
+}
+
+/* Page Button Container */
+#buttonRow {
+    height: 30px;
+    width: 950px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* Card Container */
+#contentBody {
+    display: flex;
+    width: 750px;
+    align-items: center;
+    flex-direction: column;
+    gap: 45px
+}
+
+/* Content in Card Format */
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 75%;
+    border-radius: 15px;
+    color: black
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Floor Image */
+.contentImg {
+    width: 100%
+}
+
+/* Floor Detail Container*/
+.dataCtn {
+    display: flex;
+    align-items: center;
+    padding-left: 25px;
+}
+
+.dataCtn h3 {
+    flex-grow: 2;
+}
+
+.dataCtn a {
+    text-decoration: none;
+}
+
+/* Update and Delete Button */
+.updateBtn, .deleteBtn {
+    color: white;
+    font-weight: bold;
+    background-color: #4298f5;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    height: 30px;
+    padding: 15px;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.updateBtn:hover, .deleteBtn:hover,
+.updateBtn:focus, .deleteBtn:focus {
+    border-color: rgba(12, 5, 217, 0.327);
+    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+    color: #F59F42
+}
+
+.updateBtn:hover, .deleteBtn:hover {
+    transform: translateY(-1px);
+}

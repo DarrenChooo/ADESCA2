@@ -1,0 +1,6 @@
+gamename, npcid
+clickerGame, 1
+react_hangman, 2
+guess_no_game, 3
+react_ticTacToeGame, 4 
+ballGame, 5

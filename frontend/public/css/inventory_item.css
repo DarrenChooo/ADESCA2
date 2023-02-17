@@ -1,0 +1,174 @@
+/* Path: frontend\public\css\inventory.css */
+html, body {
+   height: 100%;
+   margin: 0px;
+}
+
+body {
+   font-family: 'Montserrat', sans-serif;
+   background-color: #0391F8;
+   font-size: 18px;
+}
+
+/*Header Display*/
+header {
+   background: #1D415C;
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+   color: #fff;
+   padding: 0.8em 0;
+   margin-bottom: 2em;
+}
+
+.wrap {
+   max-width: 900px;
+   margin: 0 auto;
+   justify-content: center;
+   padding-left: 1em;
+   padding-right: 1em;
+}
+
+/*Card*/
+.card {
+   background: #fff;
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+   border-radius: 4px;
+   position: relative;
+   display: block;
+   text-align: center;
+   justify-items: center;
+   align-items: center;
+   padding-top: 1em;
+   padding-bottom: 1em;
+}
+
+.card img {
+   display: block;
+   position: inherit;
+   image-rendering: pixelated;
+   z-index: 1;
+   width: 80%;
+   margin: 0 auto;
+   transition: transform 0.2s ease-in-out;
+}
+
+.image-container {
+   justify-content: center;
+}
+
+.item-title {
+   position: relative;
+}
+
+.itemname {
+   font-weight: bold;
+   font-size: 25px;
+}
+
+/*back button*/
+.backBtn {
+   max-width: 900px;
+   font-size: 20px;
+   color: white;
+   cursor: pointer;
+}
+
+.wrap2 {
+   max-width: 900px;
+   margin: 0 auto;
+   padding-left: 1em;
+   padding-right: 1em;
+   padding-top: 10px;
+}
+
+
+/*Responsive Grid*/
+.layout {
+   display: flex;
+   background-color: #1D415C;
+   padding: 20px;
+
+}
+
+a {
+   text-decoration: none;
+   color: #1D415C;
+}
+
+/*buttons to have effects */
+.button {
+   padding-top: 20px;
+   text-align: end;
+}
+
+.button button {
+   background-color: #1d262f;
+   border-radius: 12px;
+   color: white;
+   cursor: pointer;
+   font-weight: bold;
+   padding: 10px 15px;
+   transition: 200ms;
+   box-sizing: border-box;
+   border: 0;
+}
+
+.button button:not(:disabled):hover {
+   outline: 0;
+   background: #1d262f;
+   box-shadow: 0 0 0 2px rgba(0, 0, 0, .2), 0 3px 8px 0 rgba(0, 0, 0, .15);
+}
+
+#updateInventoryForm {
+   padding: 10px 30px;
+   width: 80%;
+   height:250px
+}
+
+/*For UPDATE currency display*/
+.formRow {
+   display: flex;
+   flex-direction: column-reverse;
+   position: relative;
+   padding: 40px 0px 20px;
+
+}
+
+.formRow label {
+   color: white;
+   font-weight: bold;
+   font-size: 19px;
+   position: absolute;
+   top: 1rem;
+}
+
+#UPDATEquantityInput {
+   border: 0;
+   z-index: 1;
+   background-color: transparent;
+   border-bottom: 2px solid white;
+   font-size: 17px;
+   color: white;
+   padding: 5px 0;
+}
+
+#UPDATEquantityInput:focus {
+   outline: 0;
+   color: white;
+   font-weight: bold;
+}
+
+.deleteText {
+   color: white;
+}
+
+.btnText{
+   font-size: 16px;
+   padding-left: 20px;
+   color: white;
+}
+.btnIcon {
+   width: 30px;
+   height: 30px;
+   vertical-align: middle;
+}
+

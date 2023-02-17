@@ -1,0 +1,93 @@
+/* Back Button */
+.backBtn {
+    background-color: #1d262f;
+    border: none;
+    color: white; 
+    font-size: 25px;
+    cursor: pointer;
+    margin-left: 35px;
+    z-index: 1;
+}
+
+/* Content in Card Format */
+.card {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+/* Floor Detail Container*/
+.dataCtn {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+/* Form for edit */
+form {
+	padding: 10px 30px;
+    width: 80%;
+}
+
+/* Input Container */
+.input {
+	display: flex;
+	flex-direction: column-reverse;
+	position: relative;
+	padding: 40px 0px 20px;
+}
+
+/* Input Container Label*/
+.inputLabel {
+	color: #4298F5;
+    font-weight: bold;
+    font-size: 19px;
+	position: absolute;
+	top: 1rem;
+}
+
+/* Input Container form field*/
+#imageIdIpt, #floorNameIpt{
+	border: 0;
+	z-index: 1;
+	background-color: transparent;
+	border-bottom: 2px solid #4298F5; 
+	font-size: 17px;
+    color: grey;
+	padding: 5px 0;
+}
+
+#imageIdIpt:focus, #floorNameIpt:focus{
+    outline: 0;
+    color: black;
+    font-weight: bold;
+}
+
+/* Submit Button Container */
+.btnCtn {
+    display: flex;
+    justify-content: center;
+    padding: 15px 0px;
+}
+
+/* Submit Button */
+#submitBtn {
+	padding: 10px;
+	width: 25%;
+	font-size: 18px;
+	background-color: #4298F5;
+    cursor: pointer;
+	border-radius: 6px;
+	color: #FFF;
+	border: 0;
+}
+
+#submitBtn:active, #submitBtn:focus {
+    border-color: rgba(12, 5, 217, 0.327);
+    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+    color: #F59F42;
+	outline: 0;
+}
+
+#submitBtn:hover {
+    transform: translateY(-1px);
+}

@@ -1,0 +1,78 @@
+{
+	"frames": [
+		{
+			"filename": "attackEffect-1.png",
+			"frame": {
+				"x": 1,
+				"y": 1,
+				"w": 474,
+				"h": 860
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 474,
+				"h": 860
+			},
+			"sourceSize": {
+				"w": 474,
+				"h": 860
+			}
+		},
+		{
+			"filename": "attackEffect-2.png",
+			"frame": {
+				"x": 477,
+				"y": 1,
+				"w": 604,
+				"h": 923
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 604,
+				"h": 923
+			},
+			"sourceSize": {
+				"w": 604,
+				"h": 923
+			}
+		},
+		{
+			"filename": "attackEffect-3.png",
+			"frame": {
+				"x": 1083,
+				"y": 1,
+				"w": 749,
+				"h": 985
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 749,
+				"h": 985
+			},
+			"sourceSize": {
+				"w": 749,
+				"h": 985
+			}
+		}
+	],
+	"meta": {
+		"app": "http://www.codeandweb.com/texturepacker",
+		"version": "1.0",
+		"image": "spritesheet.png",
+		"format": "RGBA8888",
+		"size": {
+			"w": 1833,
+			"h": 987
+		},
+		"scale": "1"
+	}
+}

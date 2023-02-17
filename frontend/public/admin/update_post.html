@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Import CSS File-->
+    <link href="/css/admin_home.css" rel="stylesheet">
+    <link href="/css/admin_manage_user.css" rel="stylesheet">
+    <!--Import Font and Icon toolkit from FontAwesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--Import Google Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <!--Import Axios library-->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <title>Admin Post Manager</title>
+</head>
+
+<body>
+    <!--Top bar arranged with flex-->
+    <div class="topDisplay">
+        <!--Side Navigation Bar-->
+        <div id="sideNav" class="sideNav">
+            <a href="/admin/home.html">
+                <i id="homeIcon" class="fa-solid fa-house"></i>
+            </a>
+            <a href="javascript:void(0)" class="closeBtn" onclick="closeNav()">&times;</a>
+            <a href="/admin/manage_currency.html">Currency</a>
+            <a href="/admin/manage_dialogue.html?pagination=1">Dialogue</a>
+            <a href="/admin/manage_floor.html">Floors</a>
+            <a href="/admin/game_analysis_dashboard.html">Game</a>
+            <a href="/admin/manage_images.html">Image</a>
+            <a href="">Inventory</a>
+            <a href="/admin/manage_items.html">Items</a>
+            <a href="">Message</a>
+            <a href="/admin/manage_npc.html">NPC</a>
+            <a href="/admin/manage_user.html">Users</a>
+            <a href="/admin/manage_post.html">Posts</a>
+        </div>
+
+         <div class="topDisplay">
+            <!--Back Button-->
+            <a class="backBtn" href="/admin/manage_post.html">
+                <i id="backIcon" class="fa-solid fa-chevron-left"></i>
+            </a>
+            <!--Game Title-->
+            <div id="adminTitleContainer">
+                <h1 id="adminTitle">Update Post</h1>
+            </div>
+        </div>
+     </div>
+
+     <div id="Content" class="container">
+        <!-- UPDATE POST DESC BY POSTID -->
+        <div class="flexCtn">
+            <form id="updateUserForm">
+                <div class="userCard">
+                    <div class="dataCtn">                        
+                        <div class="formRow">           
+                            <input id="UPDATEpostInput" type="text" placeholder="Eg: $23ENSAD0PSAaa">
+                            <label for="itemIdInput">New Post Desc: </label>
+                        </div>
+                        <div class="Button3">
+                            <button type="button" id="updateIdButton">Update Post</button>
+                        </div>
+                        <br>
+                        <div class="Button4">
+                            <button type="button" id="DeleteButton" >Delete Post</button>
+                        </div>
+                        <section id="displayUpdate">
+
+                        </section>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- Import frontend JS file -->
+    <script src="../js/script.js" type="text/javascript"></script>
+    <script src="../js/admin_update_post.js"></script>
+    <script src="/js/admin_home.js"></script>
+</body>
+
+</html>

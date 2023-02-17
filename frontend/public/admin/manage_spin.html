@@ -1,0 +1,91 @@
+<html>
+    <head>
+        <title>Spin The Wheel Manager</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <!--Import Axios library-->
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <!--Import CSS File-->
+        <link href="/css/admin_home.css" rel="stylesheet">
+        <link href="/css/admin_manage_spin.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    </head>
+    <body>
+        <!--Top bar arranged with flex-->
+        <div class="topDisplay">
+            <!--Side Navigation Bar-->
+            <div id="sideNav" class="sideNav">
+                <a href="/admin/home.html">
+                    <i id="homeIcon" class="fa-solid fa-house"></i>
+                </a>
+                <a href="javascript:void(0)" className="closeBtn" onclick="closeNav()">&times;</a>
+                <a href="/admin/react_manage_currency.html">Currency</a>
+                <a href="/admin/inventory_graph.html">Inventory Graph</a>
+                <a href="/admin/manage_spin.html">Spin The Wheel</a>
+                <a href="/admin/react_manage_dialogues.html?pagination=1">Dialogue</a>
+                <a href="/admin/react_manage_floors.html">Floors</a>
+                <a href="/admin/track_game_duration_chart.html">Game</a>
+                <a href="/admin/react_manage_images.html">Image</a>
+                <a href="/admin/react_manage_items.html">Items</a>
+                <a href="/admin/react_manage_npcs.html">NPC</a>
+                <a href="/admin/manage_user.html">Users</a>
+                <a href="/admin/manage_post.html">Post</a>
+                <a href="/admin/react_manage_boss.html">Boss</a>
+                <a href="./../index.html" id="logoutButton" style="color: red;">Log out</a>
+            </div>
+
+    
+            <!--Side Navigation Bar Icon-->
+            <span id="sideNavBtn" onclick="openNav()">☰</span>
+    
+            <!--Game Title-->
+            <div id="adminTitleContainer">
+                <h1 id="adminTitle">Spin The Wheel Manager</h1>
+            </div>
+        </div>
+
+        <!-- GET ALL ITEMS -->
+
+        <div class="bodyContainer">
+            <div class="flexContainer">
+             <!--Search Bar-->
+             <div class="searchCtn">
+                <!--Search Bar-->
+                <a href="/admin/add_spin_items.html">
+                    <img class="searchCtnImg" id="add" src="../images/add.png"></img>
+                </a>
+    
+                <div class="searchBar">
+                    <input id="searchInput" type="text" placeholder="Search Items">
+                    <button id="searchIcon" type="submit">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </div>
+
+                <div>
+                    <!-- <img class="searchCtnImg2" id="deleteAll" src="../images/delete.png"></img> -->
+                   
+                        <div class="deleteText" id="deleteAll">DELETE ALL</div> 
+                        <div id="deleteAll">(ONLY PRESS IF NEEDED)</div>
+                </div>
+               
+               
+            </div>
+    
+            <!--Page buttons-->
+    
+            <div id="spinItemsContent">
+                <label for="itemid" class="textLabel" >Please do not insert less than 6 items!</label>
+            </div>
+            </div>
+        </div>
+        <br>
+            <script src="../js/script.js" type="text/javascript"></script>
+            <script src="/js/admin_home.js" type="text/javascript"></script>
+            <script src="../js/admin_manage_spin.js" type="text/javascript"></script>
+            <script src="../js/admin_delete_all_spin.js" type="text/javascript"></script>
+    </body>
+</html>

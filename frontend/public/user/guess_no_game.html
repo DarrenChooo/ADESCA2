@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Axios Library-->
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <!-- Icons Library-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+  integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Game CSS-->
+  <link rel="stylesheet" href="../css/guess_no_game.css">
+  <title>Guess The Numbe</title>
+</head>
+
+<body>
+  <div class="mainContainer" id="mainContainer">
+    <div class="vCenter">
+      <h1 class="title">Guess The Number</h1>
+      <!-- Icons -->
+      <div id="theIcon" class="theIcon">
+        <i class="fas fa-question theIcon">
+           
+        </i>
+      </div>
+      <!--the make your guess div -->
+      <div class="theGuessing" id="theGuessingDiv">
+        <div class = "spacing">
+        <h1>Choose a number between 1 and 100</h1>
+       </div>  
+        <div class = "spacing">
+           <!--guess input -->
+        <input type="text" id="numInput" class="noInputput" />
+        </div>
+        <div class = "spacing">
+           <!-- Guess button -->
+        <input type="button" value="Make Your Guess!" class="guessButton" id="guessButton">
+        </div>
+      </div>
+      <!-- Congrats div -->
+      <div id="congratsDiv" class="congratsDiv">
+        <div class = "spacing">
+        <h1 class="correctNum" id="correctNum">
+          
+        </h1>
+        </div>
+        <h1>Congratulations! You guessed correct number</h1>
+        <!-- Congrats button -->
+        <input type="button" value="Congrats" class="guessButton" id="congratsButton">
+      </div>
+
+     
+      <div class = "spacing">
+        Number of guesses: 
+        <!-- Counter -->
+        <span id="counter">
+            0
+        </span>
+    </div>
+    </div>
+
+  </div>
+  <!-- backend linking script -->
+  <script src="../js/script.js"></script>
+  <!-- game script -->
+  <script src="../js/guess_no_game.js"></script>
+</body>
+
+</html>

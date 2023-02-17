@@ -1,0 +1,63 @@
+const express = require('express')
+
+const router = express.Router()
+const multer = require('multer')
+const controller = require("../controller/imageController")
+
+const storage = multer.diskStorage({
+    destination (req, file, cb) {
+      cb(null, 'images/')
+    },
+    filename (req, file, cb) {
+      cb(null, file.originalname) // Appending original file name
+    }
+})
+
+const upload = multer({ storage });
+
+/// ///////////////////////////////////////////////////
+// Uploading of Image File in Backend Image Folder
+/// ///////////////////////////////////////////////////
+router.post("/file", controller.uploadImageFile)
+
+/// ///////////////////////////////////////////////////
+// Backend URL  -> http://localhost:3000/api/image/
+/// ///////////////////////////////////////////////////
+router.post("/", controller.createImage)
+
+/// ///////////////////////////////////////////////////
+// Backend URL  -> http://localhost:3000/api/image/:id
+/// ///////////////////////////////////////////////////
+router.get("/:id", controller.getImage);
+
+/// ///////////////////////////////////////////////////
+// Updating of Image File in Backend Image Folder
+/// ///////////////////////////////////////////////////
+router.put("/file/:id", controller.updateImageFile)
+
+/// ///////////////////////////////////////////////////
+// Backend URL  -> http://localhost:3000/api/image/:id
+/// ///////////////////////////////////////////////////
+router.put("/:id", controller.updateImage);
+
+/// ///////////////////////////////////////////////////
+// Backend URL  -> http://localhost:3000/api/image/id
+/// ///////////////////////////////////////////////////
+router.delete("/:id", controller.deleteImage);
+
+/// ///////////////////////////////////////////////////
+// Backend URL  -> http://localhost:3000/api/image/page/:pagination
+/// ///////////////////////////////////////////////////
+router.get("/page/:pagination", controller.getAllImage);
+
+/// ///////////////////////////////////////////////////
+// Backend URL  -> http://localhost:3000/api/image/search/:imagename
+/// ///////////////////////////////////////////////////
+router.get("/search/:imagename",controller.getImageByName);
+
+/// ///////////////////////////////////////////////////
+// Backend URL  -> http://localhost:3000/api/image/npc
+/// ///////////////////////////////////////////////////
+router.get("/all/npc", controller.getAllNPCsImage);
+
+module.exports = router;

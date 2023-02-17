@@ -1,0 +1,46 @@
+body {
+    background-color: #F2EDE4;
+    justify-content: center;
+}
+
+.backBtn {
+    background-color: #1d262f;
+    border: none;
+    color: white; 
+    font-size: 25px;
+    cursor: pointer;
+    margin-left: 35px;
+    z-index: 1;
+}
+
+.panel {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    background-color: #D9D1C7;
+    padding: 20px 25px;
+    padding-top: 0px;
+}
+
+.axis path {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+}
+
+.bar {
+    fill: steelblue;
+}
+
+h4 {
+    margin-bottom: 10px;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.categories {
+    margin-right: 20px;
+}

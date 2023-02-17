@@ -1,0 +1,30 @@
+/// ///////////////////////////////////////////////////
+// INCLUDES
+/// ///////////////////////////////////////////////////
+const express = require('express')
+
+const router = express.Router()
+
+const controller = require("../controller/gameDurationController")
+
+/// ///////////////////////////////////////////////////
+// Backend testing via Postman -> http://localhost:3000/api/gameDuration/
+/// ///////////////////////////////////////////////////
+router.get("/", controller.getGameDuration);
+
+/// ///////////////////////////////////////////////////
+// Backend testing via Postman -> http://localhost:3000/api/gameDuration/<gameId>/<userId>
+/// ///////////////////////////////////////////////////
+router.get("/:gameId/:userId", controller.getGameDurationById);
+
+/// ///////////////////////////////////////////////////
+// Backend testing via Postman -> http://localhost:3000/api/gameDuration/addGameDuration
+/// ///////////////////////////////////////////////////
+router.post("/addGameDuration", controller.insertGameDuration);
+
+/// ///////////////////////////////////////////////////
+// Backend testing via Postman -> http://localhost:3000/api/gameDuration/updateDuration
+/// ///////////////////////////////////////////////////
+router.put("/updateDuration", controller.updateDuration); 
+
+module.exports = router;

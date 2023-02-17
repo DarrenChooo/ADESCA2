@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Import Font and Icon toolkit from FontAwesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--Import Google Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <!--Import Axios library-->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+     <!--Import CSS File-->
+     <link href="/css/register.css" rel="stylesheet">
+    <title>Register</title>
+</head>
+<body>
+    
+    <section class="register">
+        <div class="head">
+            <h1 class="title">Register</h1>
+        </div>
+        <div class="form">
+            <h2>Please key in your username and password</h2>
+    
+                <div id="registerFormBox">
+                    <!--this is username input-->
+                    <div class="md-form"><i class="fa fa-user" aria-hidden="true">Username</i>
+                        <input class="form-control" type="text" id="usernameInput" required><label
+                            for="usernameInput"></label>
+                    </div>
+                    <!--this is password input-->
+                    <div class="md-form"><i class="fa fa-key prefix grey-text">Password</i>
+                        <input class="form-control" type="password" id="passwordInput" required><label
+                            for="passwordInput"></label>
+                    </div>
+                    <div class="btnsection">
+                        <div class="text-center"><button class="btn btn-primary" id="submitButton">Register</button></div>
+                    </div>
+                    <div id ="updateStatus">
+                    </div>
+                    <div id="links">
+                        <a href="./../index.html" id="login">I have a account</a>
+                    </div>
+                </div>
+           
+        </div>
+    </section>
+
+    <!-- Import frontend JS file -->
+    <script src="../js/script.js" type="text/javascript"></script>
+    <script src="../js/user_register.js" type="text/javascript"></script>
+    
+
+</body>
+</html>
